@@ -1,0 +1,32 @@
+Filet-Minion
+What teens seem to not understand
+Easy speaker replacement
+Okay, I was wondering what was going on.
+*Humans kill more humans than any other animal.
+The free version of Ad-Aware has found way more viruses than my paid version of Bit-Defender. You can install Ad-Aware as a 2nd line of defense by having Real-Time Protection off.
+You will probably need something like [this.](http://forums.lenovo.com/t5/image/serverpage/image-id/169i7439D0FCBFE8A695/image-size/medium?v=mpbl-1 px=-1) If you have funds for the more expensive one, I would go with that. The cheaper one looks like your ears would hurt a bit after a while.
+It should be under the repair tools.
+Have you reset your networking services? In command prompt type in the following, and then restart your computer; 1)netsh int ip reset c:\netsh.log.txt 2)netsh winsock reset 3)net stop netman 4)net start netman
+Which browser are you using?
+Try 10.0.0.1
+Try putting in your Win7 flash drive and get command prompt open. Run a simple "chkdsk c:" command, or whatever drive letter you are using. This will scan your hard drive for errors and if they are simple to fix, windows will fix them automatically. Let me know if the problem persists.
+Good, glad to hear things are running better now.
+Try using the text wrapping "in front of text" that will allow you to place a picture anywhere without having everything moving around. Also, using "through" will allow you to move the picture anywhere without snapping and the text will move accordingly, if you are inserting a picture into a paper.
+You sir, are one lucky person.
+Opens a different url every time it is clicked. Redditor for 1 hour... seems a little phishy.
+1. I hotkey; 1-All Hatches,, 2,3,4-Queens respectively,, Mouse 1-Units,, Mouse 2-Special units (Broodlords, infestors, ect...) 2. Initial scout I use drone, otherwise just run a couple lings in. With ZvP watch out for dark shrine, stargate, or mass zealots. Zerg only has an overseer and spores, I prefer overseer, so don't wait too long for lair upgrade. Also, if the Toss goes Vrays just make 2 extra queens and don't forget to connect bases with creep. With ZvZ scout early for an early pool. Other than that, ZvZ consists of making good engagements and mirroring what your opponent is doing. 3. Creep spread isn't too important, but if you want to add queens or hydras into your army, creep helps those units get into batter easier. 4. If you are going against a Toss that is FFE, then take your 3rd around 5-6 minutes if you see no aggression while scouting. Otherwise, I just take my third when I see that my 2nd is almost saturated. 5. Hydras are good units if they are used correctly. Common unit compositions are roach/hydra, and infestors can be added. A very strong mid-game if engagements are used correctly. They are DPS units so make sure they are behind your roaches, and don't forget the grooved spines upgrade which adds +1 range. 6. 2 fungals kill workers, but fungals do not do overlapping damage so make sure that the fungal is almost complete before a second is casted. I believe marines are 3 fungals, I would test it but I'm in class right now. I realize that this response is kind of late, but I figured it might help out someone.
+Gotcha. Thanks :)
+Someone already posted a fixed version?
+When the UPS guy asked if he could try out my package
+We're out here.
+Popeska - Sparks
+Well played
+Datsik   Infected Mushroom - Evilution
+First World Problem
+Eliminate - Chasing Fire Drumstep VIP
+Eliminate - Everything You Need Ft. Kristin Accorsi
+Ellie Goulding // Lights (Dub Scout Remix)
+There were banelings. 4th picture bottom left.
+Allbroke // The Device
+"and I proudly considered myself a redditor!" ...Considered...
+Sweetish // The End (LBM)

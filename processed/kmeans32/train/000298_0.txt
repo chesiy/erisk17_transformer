@@ -1,0 +1,32 @@
+Yea I don't like their new design
+Facebook and Google stand with Samsung against Apple
+What's the alternative then? Trying to get one for less than $200, what do you think of this [one](http://q3dprinter.com/oneup.htm)?
+Great analysis Dan, I agree of course on putting your backers first, but you can actually accept pre-orders in a good by charging the customer instantly through [Grandst](https://grandst.com/). When we ran our [1Sheeld Kickstarter campaign](https://www.kickstarter.com/projects/integreight/1sheeld-replace-your-arduino-shields-with-your-sma), we accepted pre-orders afterwards, shipped to our Kickstarter backers first, then pre-orders, then got it on Amazon and in retail. It's an interesting approach though as we are launching another product soon and it makes sense to fulfill your Kickstarter orders first then worry about other orders, I'll consider it in plan :)
+Thanks, I guess i'll research into that.
+Man killed by a factory robot in Germany
+I recommend the [1Sheeld](http://www.1sheeld.com) Arduino shield. It turns your smartphone's hardware into 40 different shields through an Android app.  So you have the sensors like a Gyroscope, Accelerometer, GPS, Proximity, Temperature (I don't know if you have that in the S4). Also voice recognition, storing data, text to speech, posting on twitter, facebook, video streaming through Skype ... etc.  Check the list of [shields](http://1sheeld.com/shields/) and the getting started tutorial [video](https://www.youtube.com/watch?v=4LlfBoycKE8).  I built with it some projects like a [candy grabber machine](http://www.instructables.com/id/How-to-create-your-own-candy-grabber-machine-using/), where I used the phone as a Gamepad controller for children to grab candy and teach them about Arduino and coding, it was a nice game in the maker faire.
+Nice!
+Thanks, interesting read.
+Thanks!
+robosapien   That's a toy guys, is it even hack-able!!?
+Good catch, still pretty awesome though!
+Re from /r/Arduino Built a Real-time BitCoin Price monitor using LED Matrix, Arduino and 1Sheeld
+Yea from all the comments i figured SMS and email are much better, will definitely use them :)
+Haha I don't have a baby i just built the system.
+Actually I'm using the phone for that, I use the phone as a gateway to Twitter through the Twitter shield in 1Sheeld.
+Thanks! You can find all the details in the instructable :)
+This one is the easiest, you use 1Sheeld that connects to an old phone, the Arduino is connected to the master fuse so you can send it a message to stop remotely. With the GPS and accelerometer in the phone, it sends you a text message with the location of the car. http://www.instructables.com/id/Tracking-and-Controlling-your-car-remotely-using-A/
+Where is the US link?
+I built an Arduino based project for my girlfriend for Valentine's day. I was wondering is there any solutions out there to deploy Arduino projects?   I mean a beautiful designed platform that I can use to build the project and then give it to someone as a gift, something without the hassle of wires and visible boards. Any ideas of the existence of such platforms?
+Obama sitting for his 3D portrait
+Hey guys, Amr here from the makers of 1Sheeld, you can chec out a lot of examples by the community on Hackster.io/1Sheeld  Also you can check out some [projects on instructables](http://www.instructables.com/howto/1sheeld/) and let me know if you need anything :)
+This one is also amazing:   https://www.kickstarter.com/projects/barobo/linkbot-create-with-robots
+3 Tips on UI design for backend developers
+HP Announces Sprout and Multi Jet Fusion System
+3ders.org - Adorable 'TurboRoo' Chihuahua walks thanks to a 3D printed wheelchair!
+Samples printed by Arduino 3D printer, what do you think?
+Why not make a Kickstarter campaign?
+Great! Let's meet tomorrow then! My twitter is @Amroosaleh, reach me anytime when you are there, will show you my [gadget](https://www.1sheeld.com) I'm sure you'll like it!
+Camel Selfie!
+SAM: New electronics building blocks all bluetooth connected! nice idea but really expensive, what do you think?
+LittleBits Announces BitLab, An App Store For Hardware

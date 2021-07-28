@@ -1,0 +1,16 @@
+Filet-Minion
+What teens seem to not understand
+Easy speaker replacement
+The free version of Ad-Aware has found way more viruses than my paid version of Bit-Defender. You can install Ad-Aware as a 2nd line of defense by having Real-Time Protection off.
+You will probably need something like [this.](http://forums.lenovo.com/t5/image/serverpage/image-id/169i7439D0FCBFE8A695/image-size/medium?v=mpbl-1 px=-1) If you have funds for the more expensive one, I would go with that. The cheaper one looks like your ears would hurt a bit after a while.
+Have you reset your networking services? In command prompt type in the following, and then restart your computer; 1)netsh int ip reset c:\netsh.log.txt 2)netsh winsock reset 3)net stop netman 4)net start netman
+Try 10.0.0.1
+I'm positive that XSplit does, I would try [Open Broadcaster Software](http://obsproject.com/download) because it uses less CPU and can stream higher quality without the need to pay. Take the time to look up some tutorials on it, it will get you better off.
+Good, glad to hear things are running better now.
+If it's in the early game, make some extra queens. They have a good anti-air attack and can transfuse. This can also be used against ZvZ if they go mutas. Just make a couple spores around the mineral lines and spread creep between your bases. 2-3 queens per base should do it. If they are massing them, they should have very low defenses through the mid game, so a nice roach hydra infestor (with neural parasite) should work. Don't forget range and carapace upgrades!
+[You got me.](http://weknowmemes.com/wp-content/uploads/2012/05/oh-you-show.jpg)
+Well played
+First World Problem
+Eliminate - Chasing Fire Drumstep VIP
+Allbroke // The Device
+"and I proudly considered myself a redditor!" ...Considered...

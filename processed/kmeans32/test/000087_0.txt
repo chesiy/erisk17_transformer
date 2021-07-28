@@ -1,0 +1,32 @@
+Yeah
+I sort of rewrote the pack halfway through. Original modlist:  http://i.imgur.com/Yry0BZP.png  It was more based around Thermal Expansion and AE2 - but considering most of the complaints from the original Horizons involved having those two mods, I decided to re-do it to involve Mekanism and etc. The goal was to avoid any gameplay mods in Infinity, unless they had a sufficient number of addons. AE came close to making it back in, but it's been in almost every FTB pack since it was released.
+Which version are you running?  Also, it's probably related to this issue: http://forum.feed-the-beast.com/threads/1-0-0-galacticraft-oil-acting-like-items-we-can-pick-up.95531/
+What is the average airspeed velocity of an unladen swallow?
+\_()_/
+k
+Neat
+no
+Tools for Pack Creators
+Carpenter's Blocks. Put the liquid near them, and set  B:"Routable Fluids"=true  This was actually enabled in the original Running Red, and was why it sometimes looked as if the blood was flowing past the blocks.
+Explosions.
+Here's what we currently do: http://forum.feed-the-beast.com/threads/team-member-positions.59861/#post-876355  Unfortunatly, we don't really have time to chech each pack, due to the sheer amount of packs being updated every day. Even with out now huge team, we're having trouble keeping up.  However much we'd like to do robots, we're not really at that point yet.   We're limited by the forum technology and the money we have available. Hopefully in the future we'll be able to do something similar.
+Well, due to how progression works in Phoenix Reborn, ProjectE isn't accessible 'till late game, and can't be automated until even later. So, at the beginning of the game, I had a huge farm in order to supply me with plenty of toast. I had several machines that I used in various stages, and most of them are still back at the original base where power gen is. I only transferred the frequently used ones to the new dimension.  And I figured that I might as well make it compact, once I started making the void dimension. From there it was pretty simple.
+Don't worry, you're not a bad person. It's my fault for making the code a little to obvious :P
+Not certain why, but it's in the changelog for the latest build: http://minecraft.curseforge.com/mc-mods/59968-special-mobs/files/2216952
+Sweet!
+I'm so happy to have a Mindcracker playing my pack! :D
+*cough cough Running Red*
+I miss the textures.
+[Spoilers] Rules Card Explained!    **"Chub dislikes smoke!"**  This is a reference to how, when a bomb is placed while Chub is charging, he'll consume it and it'll explode within him. This is also a reference to Legend of Zelda, as a similar boss disliked smoke and was killed in the same manner (credit to /u/Aksh0le )   **"Rooms may yield more than you expect - Experimentation is key"**  **"A dark market lies under your feet"**  These refer to what's beneath the carpets Zelda-esque sleeping rooms and some rocks, as these trapdoors can sometimes lead to the Black Market rooms.   **"The walls will harden over time - Time is the essence"**  This refers to how the Boss Rush Room only appears in the wall if you beat Mom in less than 20 minutes, else the wall will "harden" and you won't be able to access it.   **"A piece of paper is your guide"**  This hints at the Missing Poster and the Mysterious Paper, which, when you die in a Sacrifice Room, will give you a piece of the puzzle to unlocking The Lost.   **"Deny his gifts to attain your reward"**  This refers to how you have to forgo the offerings of the Devil Room in order for Angel Rooms to appear later.   **"Sleeping gatekeepers will need to be awoken with a loud sound"**  This refers to how one must blow up the Angels in the Angel Rooms in order to fight them to attain the Key Pieces. I feel as though the Devils don't blow up like the Angels because Satan doesn't want you to fight him, as there's still a small chance he'll lose. Every offering he gives, although some make you stronger, also potentially make you weaker for the final battle against him.   **"Some doors require a blessing - Carry them with you"**  This refers to how the Key Pieces, the blessings from the Angel Room, are needed to open the doors to the Mega-Satan boss.
+I imagine like with Crash Landing, where they'll have points taken off
+Running Red spatial cell coming right up
+:3
+Running Red?  #shamelessplug
+RailCraft Moving to RF
+Running Red 2: Vampire Money is Released
+Running Red 2 Gameplay
+Running Red Trailer
+top kek
+I'm in Party Mode  \o\ /o/ \o\ /o/ \o\ /o/ \o/
+We Broke RF (Lava Crystal/HTF Generator Bug)
+You're amazing at everything, it appears :P

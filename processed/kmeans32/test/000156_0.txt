@@ -1,0 +1,32 @@
+Attempted 5 Cheese Italian, "Pizza Cheese", and Pepper Jack cheesed pizzas
+Wow, so this is actually something that I would have thought should not happen, but apparently does.  On the one hand, it makes sense.  On the other hand, I don't quite agree with this being handled in this way.  So, here is what is going on: You are deleting your enemies upon creation.  Because they are created as objects (IE: Not referenced objects via pointers), as soon as they are created, they are destroyed, because they are no longer in scope.  You need to make your array an array of pointers instead of an array of just objects.  (IE: enemy npcs[10]; needs to be made into enemy* npcs[10];).  Then, you can create each enemy using new, and call the destructor for each one with delete.  Honestly, I too am a bit surprised this is happening, and maybe it's a compiler thing as it seems wrong, but maybe I'm mistaken.  TLDR; Your objects are out of scope because your arrays is an array of objects, not pointers, so game::npcs[game::total] = enemy(x, y, 1); will result in their deletion immediately.
+What I imagine this giraffe is thinking: http://imgur.com/MhTGEbQ
+Thank you!  I'll make sure to definitely post it there then :)
+Of course! :)
+Thank you! :) I've been contemplating how to do that still actually, and my only concern is I want to make sure that when I show that, I do so properly (especially since I want to avoid any deprecated OpenGL stuff).  While I'm 99% sure I'm fully up to date on everything, there's still a few minor things before I officially do that, but that's my current plan for season 2 :)
+Recently did a 10 episode C++/SFML Game Dev Stream   Recently I had someone request I make a Twitch stream on doing game development in C++.  I stuck with C++ and SFML, and went through and showed how to make several types of 2D games (pong clone, space invaders clone, a top-down RPG, and more).  While it's some rushed code (so as not to drag out each episode too much), it might be a decent resource to those who are interested.  You can find the entire season on my Youtube channel here: https://www.youtube.com/playlist?list=PLOFi3QmBRyyMnw0PHVM7smZh9Iw8a8WA7  I'm working on some new content for my Youtube account (game dev and programming related), as well as planning out a second season for my Twitch stuff (and focusing on increasing the quality of what I put online).  The big thing that I'm going to make better for the next season is having things a bit more prepared beforehand, as well as making sure the last episodes aren't me just sitting around rambling as much.  Any feedback on this is welcome of course.  I hope people find this useful!  You can find my Twitch stream at http://www.twitch.tv/gemisis/
+If someone makes this, I will totally put it on there :D
+I can understand where you're coming from.  Believe me, I'd love to have bigger prizes, it just takes time to establish oneself for something like that, and I'm just happy I can offer anything as a prize :)  And honestly, I kinda got excited for the socks.  I've never seen something like this before which made em unique imo lol Sadly these are prizes so I won't have any haha
+Easiest way to do it: Buy domain separate, and host on Google Drive.  As long as you don't mind losing server-side control, you can setup some pretty fancy sites with it.
+I bought the domain, threw some 3D spheres together with WebGL, made em move, and add the song from somewhere I found haha  Edit: Would love to have 3D models in place of the spheres, but sadly I can't model to save my life  Kinda surprised it wasn't bought already
+If countries were celebrities, who would each country be?
+I enjoy this subreddit far too much
+Not gonna lie, completely missed that first post lol
+Rose Tyler, happy...
+Why Terminator Genisys has Time Travel
+You can't just fake a speed test....
+Soon...
+That's a fake (footage from games)
+Yep, I've done all of that and it's still draining just as fast.  Worried now it might be a physical issue with the battery.  Gonna try to call Motorola tomorrow since they put me on hold for an hour today T_T
+The Star Wars prequels are awful
+Depending on the cost I may be interested. You have a cost estimate so far?
+My favorite Star Wars ship is the Voyager, and my favorite Star Trek captain is Han Solo.
+I cannot up-vote this enough........
+I hadn't seen any simple C++ libraries for the Oculus Rift other than the normal SDK, which seemed a bit overly complicated, so a friend and I made one for our senior project.  It also includes support for the Microsoft Kinect, and I'll be adding support for the recent updates to the Rift SDK soon.  I've also got a new Kinect 2.0 that I plan to add as well.  https://github.com/gemisis/Project-Virtua  We have a website over at http://www.projectvirtua.com that includes documentation and stuff too.  There's also some example projects you can look at as well there.
+That old book smell
+Holodeck Demo using new VR Library
+Chocolate-Covered Strawberries in Bulk
+A Dance of Storms - A Legend of Zelda Ballroom Dance Performance
+much doge, very grade, such class, wow
+A quick tutorial on using multiple Microsoft Kinects in C#! Hope this helps some people do neat things with them :)
+We locked my poor friend in a "Cage" for April Fools Day. He doesn't get back until 2am FYI. (x/post from r/funny)

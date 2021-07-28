@@ -1,0 +1,32 @@
+Introducing the Google Drive plug-in for Microsoft Office
+Apple Reports Record Third Quarter Results
+Battery life on Nexus 5 suddenly amazing
+What is the best way to add a press release page to a website / are there any good templates?   FYI - I'm building the website myself and I am not using a content management system like wordpress.
+Thanks! It's just a bunch of hacked together Javascript and boring old css/html
+Thanks for pointing out Aqua Nueva! The quote is actually referring to one of their other restaurants, Aqua Kyoto, but I agree that it's a little confusing. I'll edit the quote tonight. In the future if you come across something you'd like to edit you can click the 'edit' button in the bottom right hand corner and submit a change :)  Adding a full menu is definitely on my to-do list. I don't suppose you know a nice API that is able to provide restaurant menu's? I think there are a few out there which I'll review once I've made a few other changes.  Thanks a lot for your feedback,  Joe
+Thanks for taking the time to write feedback contechual.  In the very long-run I may consider adding some sort of booking system or promoted restaurants as a form of monitisation but for the time being I'm happy on growing the community and hopefully providing a nice product. I'm not a fan of banner ads so I don't think I would ever consider adding them to the site.  I agree with you that the site was looking a bit cluttered. I've made a few changes following other user comments so hopefully the site will look a little cleaner now. Still a way to go but getting there!  You're right that there's quite a bit of empty space on the left-hand side when a foodie opens a restaurant but I'm hoping this adds to the simplicity of the website. I'll have a play around tonight to see if I can make it cleaner with a wider 'more info' board.  Thanks again for your feedback,  Joe
+I've just released Food Finder: a place for foodies to find and share amazing restaurants (London only). I want to create an incredible UX - I need as much feedback as possible!   Hey everyone,   I've just released [Food Finder](http://www.foodfinder.io) into an incredibly crowded space. There are a couple of things I want to achieve with [Food Finder](http://www.foodfinder.io) to make it different to the competition.   They are:  * Every restaurant on [Food Finder](http://www.foodfinder.io) needs to be amazing  * [Food Finder](http://www.foodfinder.io) will be powered by the foodie community by enabling users to post great restaurants to the site  * I want to make an incredible user experience similar to City Mapper where things are simple and just work.  There's still quite a way to go and [Food Finder](http://www.foodfinder.io) has only been released in London so far but I'd love your feedback on the user experience and any advice on the best way to grow the community of foodies.    Thanks,  Joe   Name: Food Finder  URL: [foodfinder.io](http://www.foodfinder.io)  My Bio:  I'm a VC, physicist and (weekend) entrepreneur living and working in London. Food Finder was originally a weekend project but has been adopted by a lot of my friends. Now I want to grow the community and improve the platform.
+Food Finder - a place for foodies to find and share amazing restaurants [London only]
+How did you find this?
+Launching 12 startups in 12 months - this is my first...WhatsApp meets Apple Pay
+WhatsApp meets Google Wallet with this social contactless payments app
+Just exchanged my moto 360 for a new one because my charger broke - the strap is noticeably better quality!
+Finished (thanks for the feedback) - Daniil Kvyat's new website
+it's back
+You need to use a glasses prescription unfortunately.
+What is your prescription curiousincident?
+Eyesight simulator
+Neurences Cloud Platform Gives Wearables Eyes That Can See And Ears That Can Hear
+You can download the app via: Apples App Store https://itunes.apple.com/app/tag-me/id943130482?mt=8 Androids Google Play https://play.google.com/store/apps/details?id=com.taggarapp.tagme
+Tag Me Launches an App With Christmas-themed Augmented Selfies
+Sorry all gone
+Sent
+#ello #moto360
+The stone leather really sucks. I was very disappointed.
+In John Lewis now...they dont have mine :/
+Domain for Inbox anyone?   GONE I have 5 domain invites - anyone want to swap for a inbox or ello invite?
+Webapp that allows you to find your nearest #FormulaE team and driver.
+Google says Belgium is closer - but I agree it doesn't seem intuitive  https://www.google.co.uk/webhp?sourceid=chrome-instant ion=1 espv=2 ie=UTF-8#q=distance+between+us+and+belgium  https://www.google.co.uk/webhp?sourceid=chrome-instant ion=1 espv=2 ie=UTF-8#q=distance%20between%20us%20and%20france  Thanks for your feedback
+D'Ambrosio drives for a US team and there aren't any US drivers
+He's Belgian but drives for a US team - so the app prioritises Buemi who is Swiss and drives for a French team - I may play with the algorithm now.
+Further images of LG G Watch R have been released

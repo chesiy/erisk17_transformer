@@ -1,0 +1,32 @@
+GTA V - Funtage - Explosions, Freefalling   Stupidity!
+Hahahaha yes! xD     This is the answer for everything! The human species have not yet matured! ;)
+Exactly my point. Raised to be a good boy and work for the big companies who take control of your life on a daily basis, being used to make money. And leading you into believing in this fantasy heaven, or you'll go to hell.   .  "Be a good boy or else santa isn't coming."  .  Money. It's all money.  .  Why don't we all just treat each other nicely, remove religion (religion, not faith.) and progress as a species and stop bombing eachother?
+Religion won't die out, for sure, there'll always be strange people who believe in magical small arab jews capable of answering over 7 billion prayers each day including on their day off, which is when most of the praying takes place, and who have big beards that also get eaten by fish and build big boats and live up to 9,000 years old   (Wow if religion never existed, you'd think I was absolutely high as fuck right now.)  but I hope the main kind of 'religions' do die out and people start realizing that the evidence of life and all its answers are all around them.
+I'm not on about Darwin, I'm straight up on about the fact that the UK is marked as a christian country. National religion type stuff.
+Very much correct, though I'm unsure about the anti-science in terms of *SOME* believers / anti vaccines.
+Yea but in terms of "the holy bible" (the book that used to say it's okay to sell your daughter for sex, and to own slaves, and that you cannot be homosexual) also says you're not allowed to eat shrimp, but we've all kind of forgot about all them bits... why? Why are we adapting the bible when it is said to be the divine perfect book of good and bad? Surely it shouldn't need changing? I'm not saying it's a bad thing that we're adapting something that's out of date and is no use to the advancement of humanity in the slightest, but why is it being changed when been written by man through the voice of god?
+I'd be very worried if they did.  Getting back to their instructor like: "Yeah... Drove into an oncoming tank."
+Great job!
+Ironically I got 14.04 because it was LTS, and so it'd be bug free.  15.04 sorted that cocksucker out with one visit. ;D flawless. And the new background looks cool too!
+No, but if you can put toothpaste back into the tube...  *Then you can put toothpaste back into the tube.*
+Computer is all new. I've got to reinstall the whole thing now, simply because I can't login or open terminal, which means getting the ethernet cable out and going through all that pain again. All I wanted to do was install Ubuntu. I'll try again probably tomorrow... thanks for the tip! :P
+***EVERYTHING!!!***
+Ubuntu 14.04 Wifi Drops Off Randomly?
+Are you new to cable management too? :D
+Shocking.
+The irony is strong in this one. Was fun talking with you. GG. Bye.
+**Better give everyone even more guns.** *That'll solve it...* 10/10 logic
+[Notice how we do it in a plain that LITERALLY has no wildlife in it?](http://static.panoramio.com/photos/large/7081236.jpg)
+With all this debate about Windows 10, it'd be wise to sit back and see what happens. Personally I think it's not going to have any privacy whatsoever due to the NSA, but we'll see. Reserve by all means, but I'll be upgrading (or not) if I know it's 'safe'.  If it has any privacy threat whatsoever, it can gtfo.
+Why not just drop blank shells instead. Sorted.  * **Target Practice, not explosive demolition practice** *to see how many species we can wipe out in under 20 seconds, just because we can, f#ck the environment, we wanna blow sh#t up cos 'murica.*  Let's blow up an island instead of advancing biological understanding of biodiverse islands. 'murica. I'm so glad to be from the UK.
+Causing a blackout...  Dick move.
+A game of thrones, The Name Of The Wind, The Blade Itself, LOTR
+Doing it! :D
+Already got Debian, Kali and Ubuntu in a VM :D I was just unsure whether or not to go for a dual boot. I think I'm going to use Windows as gaming / production boot, and Ubuntu Linux as personal / files / general internet browsing :D I love the fact how secure Linux is, and how you can set it up to do anything!
+I'm with you here.
+Hello Timmy,  What specs are you using, more specifically, your motherboard name.  Try the following  * Ensure that your hard drives inside of your computer case are **properly connected.** Look for the name of the hard drives as well for the next possible solution.   * In the BIOS boot sequence, make sure that the hard drive with your operating system installed on it is first in the boot sequence. If you are not sure how to do this, it may be in your "advanced bios features". or you can boot up the computer and spam (usually) F8, depending on your motherboard, to tell it which hardware you want it to boot up from (select your OS hard drive)   * If you find this too confusing, try unplugging all your hard drives and optical readers, except for the one with your OS installed. And ensure your HDD is first in the BIOS boot sequence.   * If the boot sequence is not the issue, then I'd recommend updating your BIOS, simply google your motherboards name and look for the latest BIOS drivers. You may need another computer and a USB stick in order to do this. There are many tutorials on how to do this. Check your BIOS version and write it down before doing so, in order to save time, incase it's the newest version.   * Finally, if all else fails, try clearing the CMOS, this can either be done in the BIOS menu somewhere, or usually there is a small black button on the motherboard itself. Press it while the computer has turned on, and it will restart, hopefully fixing your issue.   Goodluck! Any help you need, ask away!
+Or the one after that...
+Also the GCHQ/NSA are spying on you, just saying like. Nothing too important. x)
+Still searching... Nothings came through yet. :(
+Found the issue! CPU-Z is saying the Multiplier keeps jumping from x16.0, all the way down to x4.0 - which is bottlenecking the GPU, now what's causing the CPU Multiplier to drop?  Edit: 'Underclocking' the CPU seems to of solved the issue. Hm. Could it be PSU related I wonder?
+Any game, any settings - Issue persists :(

@@ -1,0 +1,1 @@
+nohup python -u ERDE_kmeans.py --lr=2e-5 --input_dir ./processed/kmeans16 --bs=4 --user_encoder=trans_abs --num_trans_layers=4 --chunk=0 > kmeans_sample.log 2>&1 &

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="10509a41-f986-4f5f-a0af-99ac13c6a9b7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1vLwkkG2ENWnj4CrOOcGdSdWL21" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\speechlab\erisk17" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\speechlab\erisk17" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ERDE" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="erisk17" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ERDE.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ERDE" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10509a41-f986-4f5f-a0af-99ac13c6a9b7" name="Default Changelist" comment="" />
+      <created>1626354821219</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626354821219</updated>
+      <workItem from="1626354823495" duration="4527000" />
+      <workItem from="1626400411936" duration="14736000" />
+      <workItem from="1626506422541" duration="14505000" />
+      <workItem from="1626572929480" duration="2158000" />
+      <workItem from="1626608698402" duration="4885000" />
+      <workItem from="1626658558933" duration="1451000" />
+      <workItem from="1626745874979" duration="6378000" />
+      <workItem from="1626956663788" duration="2051000" />
+      <workItem from="1627007146396" duration="1004000" />
+      <workItem from="1627093584496" duration="2512000" />
+      <workItem from="1627182713268" duration="14966000" />
+      <workItem from="1627263709570" duration="7298000" />
+      <workItem from="1627289375308" duration="7821000" />
+      <workItem from="1627352168550" duration="8320000" />
+      <workItem from="1627440229853" duration="13416000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1421" height="79" key="GridCell.Tab.0.bottom" timestamp="1627470897141">
+      <screen x="72" y="0" width="1464" height="864" />
+    </state>
+    <state width="1421" height="79" key="GridCell.Tab.0.bottom/72.0.1464.864@72.0.1464.864" timestamp="1627470897141" />
+    <state width="1421" height="79" key="GridCell.Tab.0.center" timestamp="1627470897141">
+      <screen x="72" y="0" width="1464" height="864" />
+    </state>
+    <state width="1421" height="79" key="GridCell.Tab.0.center/72.0.1464.864@72.0.1464.864" timestamp="1627470897141" />
+    <state width="1421" height="79" key="GridCell.Tab.0.left" timestamp="1627470897141">
+      <screen x="72" y="0" width="1464" height="864" />
+    </state>
+    <state width="1421" height="79" key="GridCell.Tab.0.left/72.0.1464.864@72.0.1464.864" timestamp="1627470897141" />
+    <state width="1421" height="79" key="GridCell.Tab.0.right" timestamp="1627470897141">
+      <screen x="72" y="0" width="1464" height="864" />
+    </state>
+    <state width="1421" height="79" key="GridCell.Tab.0.right/72.0.1464.864@72.0.1464.864" timestamp="1627470897141" />
+    <state x="485" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1627289414671">
+      <screen x="72" y="0" width="1464" height="864" />
+    </state>
+    <state x="485" y="257" key="com.intellij.ide.util.TipDialog/72.0.1464.864@72.0.1464.864" timestamp="1627289414671" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/erisk17$ERDE.coverage" NAME="ERDE Coverage Results" MODIFIED="1627440485065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

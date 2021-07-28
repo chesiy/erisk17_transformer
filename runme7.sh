@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python -u main_post_clf.py --lr=5e-6 --bs=4 --input_dir=./processed/kmeans16 --model_type=bert-base-cased

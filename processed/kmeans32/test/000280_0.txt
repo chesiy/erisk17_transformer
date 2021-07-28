@@ -1,0 +1,32 @@
+Google says government forced it to hand over Jacob Appelbaum's data for WikiLeaks grand jury
+The FBI's Stingray Secrecy May Be Aimed At Preventing Law Enforcement From Overusing A Key 'Exploit'
+Australia passes data retention into law
+CIA 'tried to crack security of Apple devices'
+Verizon, Cisco, Microsoft And Others Pull The Plug On Default Encryption In HTTP/2
+NSA wins key ruling in years-old phone and Internet spying lawsuit
+Google to Announce Fiber Expansion In Four Cities
+UK Monitors "Toddlers" for Extremism
+TIL, Sony was hacked in 2011 after they laid off employees responsible for network security. The hack exposed information of 100 million users.
+Tucson can keep cellphone tracking info secret, judge rules
+The National Security Agency has engaged in spying on hundreds of companies and organizations tied to cellphone networks in an effort to continually beat new encryption standards and surveil phones, according to documents leaked by Edward Snowden
+One of the UK's biggest telecoms companies worked with GCHQ to ensure the spy agency had unprecedented access to vast swathes of UK internet data
+[Link](http://cryptome.org/2013/11/snowden-tally.htm)
+Judge threatens detective with contempt for declining to reveal cellphone tracking methods
+Terrorist or  Teenager? I was opinionated, sometimes defiant. I was also a young Muslim. For the FBI, thats suspicious.
+Civil liberty organizations have put Ulster County on warning for a new protocol of running warrant checks on everyone walking into its Department of Social Services, calling it "unlawful and misguided."
+[**source**](https://www.ipsos-mori.com/researchpublications/researcharchive/3466/Perceptions-are-not-reality-10-things-the-world-gets-wrong.aspx)
+The U.S. Postal Service reported that it approved nearly 50,000 requests last year from law enforcement agencies and its own internal inspection unit to secretly monitor the mail of ordinary Americans for use in criminal and national security investigations
+Leaked details of Trans-Pacific Partnership Agreement (TPP) negotiations reveal that Australia is pushing an approach to copyright enforcement in the region that appears to ignore broader public interest concerns in favour of the supporting rights owners
+An NSA programme called "Treasure Map" gives the US agency and Britain's electronic eavesdropping GCHQ near real-time information about the operators' networks, right through to end users on computers, smartphones or tablets
+A new report form the Toronto-based internet watchdog Citizen Lab has shown cases of governments running network injection attacks that can deliver malware via any HTTP web connection
+Verizon Communications Inc defended its decision to slow data downloads for some customers using older unlimited data plans, telling U.S. regulators it was a "widely accepted" and lawful part of network management
+This Is How Comcast Is Astroturfing the Net Neutrality Issue: "Comcast is working with thinktanks like the American Enterprise Institute. AEI fellows are printing op-eds in support of killing Net neutrality throughout mediafrom WSJ to US News   World Reportwithout disclosing their ties to Comcast"
+[Meta] Reddit Admins ban CBSnews.com domain after a thread named "Rand Paul: Blame Dick Cheney for Iraq violence, not Obama" leads to great discussions [x-post /r/censorship]
+That's not a tactic the mso needs to use, but of an individual or organization might do. Here's the Comcast [law enforcement handbook](http://cryptome.org/2014/05/comcast-spy-2012.pdf).
+Freepress: Four infographics reveal why the Comcast merger is bad for consumers
+TIL almost 6 years later, Comcast still imposes the same 250GB bandwidth cap limit, which they consider an "extremely large amount of data"
+What's wrong with the Comcast-Time Warner deal? A lot
+Same thing happend to me. Only way I was able to settle this was to show PROOF of ownership by looking up my modem s/n via the manufacturer website. Actually, proof that Comcast didn't purchase it. For Arris/Motorola/General Instruments: https://mobilityonline.motorola.com/services/BCSApps/BCSSerialSearch.aspx
+The "Netflix is slow" followup: Comcast may be circumventing their Open Internet agreement by purposefully letting peering exchanges with Level 3 clog up with traffic, effectively throttling Netflix video streams [x-post /r/netflix]
+Just like most folks here, I have several bills I pay on a monthly basis, and never think twice about paying them. But with Comcast, I utterly despise each month I give them money. I feel as if I'm directly funding their company to stifle innovation and competition. Data usage caps, overage fee's directly influence how future technologies are developed. It pisses me off to no end and I feel sorry for the next generation folks who have to put up with this bullshit.
+[](http://i.imgur.com/LHOkMBL.jpg)

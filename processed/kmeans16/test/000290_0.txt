@@ -1,0 +1,16 @@
+I second that last comment.   China can be a great experience with a positive attitude; most of all, the people are very nice - especially in the northeast where you are going. Gruff on the surface but great friends once you get to know them. Take every opportunity to mingle and spend time with people.  Also, be on guard that employers  will try to use you, so don't be afraid to politely stand firm when you feel it's necessary.
+Sorry, but you'll have to rephrase the question.
+Good thing as he hasn't don't crap since
+The problem is also lack of competition. If the cost of producing X widget is too high another business will see the opportunity and enter the market at a lower price to capture market share. With health care, the barrier to entry is so high that's not really an option. And smaller markets can't support multiple competitors, especially for specialized care. (GPs can be more competitive and this is why they don't make as much money and no one wants to be one)  This is why free market models don't work for health care and it should be regulated to avoid price gouging just like the state does with basic utilities. I favor free markets but this is one case where Europe and Japan definitely have it right.
+*some* of them care about those things , plenty of others just want to provide helpful answers. I've answered lots of stack exchange questions and don't care about all that "is it relevant enough, did enough people reply/view this, is it interesting enough, is it truly a question blah blah -- all those are subjective; to the person asking the question and others searching for the same question later, it *is* relevant/important. The site didn't used to be so "snobby" and "elitist" and was therefore more helpful to the average person. I stopped contributing for that reason.
+Accessing a remote production DB in local dev mode
+Yes!! A big win for both projects, and most importantly, for the users. Congratulations.
+Rails-Footnotes has more info, though I like the bar idea. Maybe the two could be combined.   http://github.com/drnic/rails-footnotes
+I've seen a lot of Rails attachment-handling plugins, but this is the first one I've really liked.
+Active Record tips and tricks
+I agree it's a good thing. I look at it as a commercial entity giving to the open-source community, while at the same time making money without which they wouldn't be able to host FOSS repos anyway.
+IDEA: There have been a number of a "essential gem" posts, some linked on reddit. What would be cool is if someone made a simple "ruby-gem" site with all the available gems listed (users could submit ones), and the ability to vote and comment on the gems, or a "I use this" button to which ones are actually most used. Or maybe a "gems" section should be added to agilewebdevelopment.com.  Or, perhaps something like this exists and I haven't found it yet.
+Wrap all relevant attributes in a single params key
+When - enhancing :before_filter
+21 Merb Links, Tutorials and Other Resources
+Codefluency: Ruby 1.9 Presentation

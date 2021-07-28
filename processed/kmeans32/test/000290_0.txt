@@ -1,0 +1,32 @@
+12VPN or PandaPow
+It's incremental innovation, which is not the same as breaking new ground, but useful nonetheless.  Wechat started out copying whatsapp, but it's now arguably miles ahead, especially with micropayments
+I second that last comment.   China can be a great experience with a positive attitude; most of all, the people are very nice - especially in the northeast where you are going. Gruff on the surface but great friends once you get to know them. Take every opportunity to mingle and spend time with people.  Also, be on guard that employers  will try to use you, so don't be afraid to politely stand firm when you feel it's necessary.
+Ah, the English...
+Why do food cravings change drastically during pregnancy?
+Thoughts on Ashley Madison hack and data safety
+Hey! Ireland is not England.
+True but at least it's a step in the right direction as insurance is much cheaper than paying out of pocket when you have a serious illness or accident. Making care affordable would require the type of government intervention that is anathema to most Americans.
+The problem is also lack of competition. If the cost of producing X widget is too high another business will see the opportunity and enter the market at a lower price to capture market share. With health care, the barrier to entry is so high that's not really an option. And smaller markets can't support multiple competitors, especially for specialized care. (GPs can be more competitive and this is why they don't make as much money and no one wants to be one)  This is why free market models don't work for health care and it should be regulated to avoid price gouging just like the state does with basic utilities. I favor free markets but this is one case where Europe and Japan definitely have it right.
+This ^
+the fact that /u/ekjp accepted to be a mod on Reddit has exponentially increased my respect for her
+Go back and demand a jelly bean!
+Thanks.
+Actually they get the weekend off from public school. However, anyone who can afford it will send their kids to "after school" classes in the evenings and weekends. So the kids, especially middle school on up, but even many primary school students, are lucky if they get half a day off on the weekends. They also study from morning until night on week days. And if you think that these after-school classes are fun, extra-curricular stuff, think again. There might be a piano lesson in there, or swimming or tennis (if they're wealthy enough), but it's usually math and English.
+Rails Logging Tips
+souped-up ruby textmate bundle
+Accessing a remote production DB in local dev mode
+Speaking from experience, unless you're only translating one or two word phrases, or very simple and unambiguous phrases ("this is a pen"), Google translation, and similar online services, are useless as the translation is more likely to be wrong than right.
+This series of interviews needs a new title. Judging by the content so far, it's aimed squarely at beginners who know very little about Ruby, and mostly states stuff that's widely known from those who follow Ruby at all. That doesn't make it bad, it's just not about "little known ways" to "ruby mastery".
+Rails-Footnotes has more info, though I like the bar idea. Maybe the two could be combined.   http://github.com/drnic/rails-footnotes
+Hoptoad
+acts_as_what?
+There are a lot of tips and tricks on the web as to how to do things better/faster/cooler with Ruby/Rails. But there's not enough talk about how to make sure your site is secure with Ruby/Rails.
+Annotate Models with gem
+IDEA: There have been a number of a "essential gem" posts, some linked on reddit. What would be cool is if someone made a simple "ruby-gem" site with all the available gems listed (users could submit ones), and the ability to vote and comment on the gems, or a "I use this" button to which ones are actually most used. Or maybe a "gems" section should be added to agilewebdevelopment.com.  Or, perhaps something like this exists and I haven't found it yet.
+Stone: Dead-Simple Data Persistence
+Looks very useful. Beast (http://beast.caboo.se/) is my favorite Rails forum (and Mephisto my favorite blogging system).
+Wrap all relevant attributes in a single params key
+Here's the irony: A good programmer will write more and better test code because they are more aware of what could possibly go wrong; however their code already reflects their awareness of those potential problems, and therefore while the tests help, they are in a way a double-check for something that they've already well covered in their code.  On the other hand, a poor or novice programmer will have less awareness of what could possibly go wrong, and therefore won't account for those things in their code, but because they're unaware of them, won't write proper tests that would catch those potential problems. So in either case, the helpfulness of tests is limited; the former because their code is generally good enough without the tests, and the latter because their knowledge is too poor to write good tests, and once they're knowledge increases their code gets better and therefore their need for tests decreases.  That doesn't mean tests are not useful. Where I believe they shine is not in catching defective code, but in making sure that a change made to one piece of code doesn't break something somewhere else that may seem unrelated (or that you didn't remember was related), without having to "manually" test the app by running through all the steps. The larger and more complex the app, the more important this becomes and saves countless hours of checking to see if everything still works.
+21 Merb Links, Tutorials and Other Resources
+Jay Fields Thoughts: Static typing considered harmful
+Using Git within a project (forking around)

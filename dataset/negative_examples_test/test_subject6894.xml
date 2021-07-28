@@ -1,0 +1,98 @@
+<INDIVIDUAL>
+<ID>test_subject6894</ID>
+<WRITING>
+<TITLE> Well, I think I'm saved now. </TITLE>
+<DATE> 2015-07-22 10:08:49 </DATE>
+<INFO> reddit post </INFO>
+<TEXT> Also I've just gorged my ears out, is there a recommended subreddit for first aid? </TEXT>
+</WRITING>
+<WRITING>
+<TITLE>   </TITLE>
+<DATE> 2015-07-11 21:44:18 </DATE>
+<INFO> reddit post </INFO>
+<TEXT> Whats with all the stuff above the wall?  Shouldn't it be a roman no go zone? </TEXT>
+</WRITING>
+<WRITING>
+<TITLE>   </TITLE>
+<DATE> 2015-06-16 15:35:01 </DATE>
+<INFO> reddit post </INFO>
+<TEXT> Buy a SSD they said, never have a disk crash again they said... </TEXT>
+</WRITING>
+<WRITING>
+<TITLE>   </TITLE>
+<DATE> 2014-02-09 20:33:48 </DATE>
+<INFO> reddit post </INFO>
+<TEXT> Slowing moving the VM to the cluster rather than mess around as a reboot will fix it. </TEXT>
+</WRITING>
+<WRITING>
+<TITLE>   </TITLE>
+<DATE> 2014-02-06 23:42:31 </DATE>
+<INFO> reddit post </INFO>
+<TEXT> Nope, reset that from the console with no luck. </TEXT>
+</WRITING>
+<WRITING>
+<TITLE> Host dropping out of cluster and refusing to connect again. </TITLE>
+<DATE> 2014-02-06 22:22:38 </DATE>
+<INFO> reddit post </INFO>
+<TEXT> Can anyone help with an issue with a 5.0 host? A blade dropped out of vsphere a few days ago.
+
+Ive tried the normal restart of the management agent from the console and ssh but the host refuses to connect again. Connecting directly to the host with the vsphere client also fails.
+
+All the vm on the blade are still working as normal, its just I cant get the blade back in the cluster to vmotion everything off. A number of the vm are very important production servers that cant currently be shut-down. Ive logged a number of calls with HP and their current solution is to reboot the blade, which doesnt help getting the vm off the blade or what the cause of the original issue is.  </TEXT>
+</WRITING>
+<WRITING>
+<TITLE> Found a cute mouse today. </TITLE>
+<DATE> 2013-11-15 20:18:18 </DATE>
+<INFO> reddit post </INFO>
+<TEXT> Let it go in the big field. </TEXT>
+</WRITING>
+<WRITING>
+<TITLE>   </TITLE>
+<DATE> 2013-11-03 16:51:32 </DATE>
+<INFO> reddit post </INFO>
+<TEXT> Are you interested in anyone who has a bit of Linux skill but not enough to put on a CV and wants to cross train from a standard window 3rd level admin? </TEXT>
+</WRITING>
+<WRITING>
+<TITLE>   </TITLE>
+<DATE> 2013-07-21 20:42:40 </DATE>
+<INFO> reddit post </INFO>
+<TEXT> Just to add as I forgot to say but this is a Rover K series engine that was in a Lotus Elise.  It was a very tuned engine giving over 200bhp.  I'm going to estimate around $15k to build a new engine with the same output. </TEXT>
+</WRITING>
+<WRITING>
+<TITLE> What happens when you go from fifth to second at the wrong speed... </TITLE>
+<DATE> 2013-07-20 20:01:54 </DATE>
+<INFO> reddit post </INFO>
+<TEXT>  </TEXT>
+</WRITING>
+<WRITING>
+<TITLE> Poundland now only offer 3 cans of Pepsi for a pound instead of 4. </TITLE>
+<DATE> 2013-01-21 22:51:21 </DATE>
+<INFO> reddit post </INFO>
+<TEXT> Poundland sugary drink inflation hurts :( </TEXT>
+</WRITING>
+<WRITING>
+<TITLE>   </TITLE>
+<DATE> 2013-01-06 22:03:46 </DATE>
+<INFO> reddit post </INFO>
+<TEXT> Do you live in that Amish town and have a horse drawn buggy? </TEXT>
+</WRITING>
+<WRITING>
+<TITLE>   </TITLE>
+<DATE> 2013-01-03 21:42:56 </DATE>
+<INFO> reddit post </INFO>
+<TEXT> Oh deer!!!! </TEXT>
+</WRITING>
+<WRITING>
+<TITLE>   </TITLE>
+<DATE> 2012-12-15 22:31:53 </DATE>
+<INFO> reddit post </INFO>
+<TEXT> Someones sister is also their mother...
+ </TEXT>
+</WRITING>
+<WRITING>
+<TITLE>   </TITLE>
+<DATE> 2012-11-27 22:24:24 </DATE>
+<INFO> reddit post </INFO>
+<TEXT> Sorry. Its getting colder.  Your bed is warmer than the rest of the house... </TEXT>
+</WRITING>
+</INDIVIDUAL>

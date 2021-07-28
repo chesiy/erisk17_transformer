@@ -1,0 +1,16 @@
+Hehe.. Excellent!         ..A little bit unnerving walking around with that kind of cash tho.. :-D
+...It got better...
+Capslock.. Its like a cruise control for cool... 0_0
+I'll bet it makes a curiously strong signal.        ...Ill show myself out.. :-D
+Funnily enough, I think the d'lings are getting pretty used to me working around in the backyard, so.. perhaps? Regardless, I think its cool for however long it lasts. Maybe, if they hang long enough, they might 'imprint' well enough so as I may get visitors to my backyard every year?  Mama, however greets me with fear, and suspect. Wonder if a human screwed with her at some point?         Fun to watch the littl'uns tho. They are *not* graceful on terra firma LOL.
+Some ducks moved into my backyard last week.
+Human Centipede
+Well, kinda.. But, within the context of your original post, a pair of baofeng handhelds on a simplex freq won't get out all *that* far. Maybe 10-20 miles. Likely, you won't find any activity other than the other person (who also must be a licensed ham). Regardless, you can identify the other party by your callsigns.        You can limit whom you receive, and who can receive you by using "tones" (For instance CTCSS). This is a set of sub-audible tones that get transmitted along with your voice. If you set up your radio to only listen to a signal with a CTCSS of 100.7, then only someone who has set up their radio to transmit with a CTCSS of 100.7 will "get through" (open the squelch) of your radio. Anyone in the area transmitting on the same frequency with a different CTCSS tone will not be heard by your radio.        It sounds complicated (maybe) but its really not, and you will learn about it while studying for your ham license exam. If you have any technical know-how, or background, I think you'll find the info needed to pass your Technician is really easy, and pretty trivial.   Edit 1) Clarification..
+Heh.. Yeah, I remember the first time I saw that..  It blew my mind a bit.       (Names Jason here, born in July, heh)
+I'm still new to the radios, so hopefully someone can chine in and correct me where I'm wrong, but the FT-8900 (as I understand) is essentially an 8800, but with more bands. I'm only working VHF/UHF currently, and learning more before I plonk down the cash to dive into HF. The 8800 has glowing reviews (so does the 8900) and the cross-band repeat was important to me (I believe the 8900 does that as well)
+"reddit"
+Passed Element 2, and 3 Jan 31. Still no license?   Im unsure where to go next, or if I should do anything at all at this point, but I guess I have a weird story.   I passed Tech, and General with an ARRL affiliated club (Valley of the moon ARC) on Jan 31. About the 4th of Feb, I got the testing leads (long established) license in the mail at *my* house? (K6UUW) So, I dropped that in the mail back to the guy, and haven't heard or seen hide nor hair about my ticket.  I know these things can take time, but we're going on a month now.. *shrug*
+IRC is like multi-player notepad.
+Erm.. We are "Soldiers"   Well, a well regulated militia.   2nd amendment, and all..
+What happens when he gets to 88 miles per hour?
+So you're saying, there's a universe that I invented pants?

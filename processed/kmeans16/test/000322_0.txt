@@ -1,0 +1,16 @@
+Sorry if it sounded off putting. My previous posts was mostly - tinkering is awesome and I really recommend it (even if you "end up buying mine") as you will have tons of fun, and maybe we have missed some important thing. Also I already developed (for now a beta part) an API for 12hours to allow 3rd party devs to play with this, as I can find one, two... uses for this but I'm sure there are tons more.
+I don't know where you live but in my area apart from Hackathons (which probably aren't best fit for you as you are looking for a not that rapid developing) there are dozens of meeting to solve some problems in society - for example http://kodujdlapolski.pl/ which means "code for Poland" and in most of their meetings there are at least few ideas and always too little dev people.  Another idea is to take some popular Android app that is abandoned for a while (bad UI, slow etc.) and make it much better - just be aware of trade marks etc.  Also probably /r/Android or /r/enterpreneur is better to give you just an idea for an app.
+https://vimeo.com/18293265   Skip to 0:45, and 2:27 is probably one of most beautiful shots I have ever seen.
+X1 3rd gen i7, non-touch QHD maks brightness with developing in Android Studio + chrome + emulator = around 5,5-6h Screen could be more bright, touchpad one or two times (since 2 months) had some problems - trackpoint not, restart helped. Overally happy but 8GB is a bit of pain, 12GB would be perfect. Would buy it second time - also LTE is super nice (even if before buying it wasn't key feature) having 1GB per month for 15$ a year is super nice fallback.
+What for? This is a library, app that is "visible" and can be used is just a mock to show how it uses library. Also it won't be possible as Android M isn't still release as API (for example 23) thus also I cannot upload it to jitpack etc.   Which is a good thing because there can be still some changes before it going public (and I hope so, this library removes only some of pains to use new Permission model).
+Keycaps approved by Duarte
+Student loans
+Units.
+Updated AirAsia airplane painting
+Whoa, that is interesting! Look at "mayo, mayonnaise" and it seems that mayo comes from ~1860!
+Hammering band aid
+Sorry to disappoint you, but no. It is one year old idea, but there was always something more important to do, and I wasn't convinced that it would be so successful.  But it is nice to see that not only I have cool ideas, even if very similar.
+It shows only events from next 12 hours - however, in some post here was it mentioned (to add events from 24hours), and I will experiment with that (maybe second circle with events?).
+Sorry to hear, I tested it with only 7-8 calendars. Can you provide some screenshots, and elaborate on it? Here or PM me. I would be more than happy to solve it.
+Probably you are right. As a proof, here is my photoblog from 2 years ago (while I had more time, I went outdoors and tried to capture some awesome portraits): http://tajchert.wordpress.com/
+Thank you - just rooting N5, and it is next thing on my to-do list.

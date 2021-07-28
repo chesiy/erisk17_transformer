@@ -1,0 +1,16 @@
+Google says government forced it to hand over Jacob Appelbaum's data for WikiLeaks grand jury
+TiVo Study: Over 1.5 Million Cable Subscribers Plan To Cancel Cable And 38.1 million Cable Subscribers Are Unsatisfied With Their Service
+Inside the NSA's War on Internet Security - According to an NSA document, the agency intended to crack 10 million intercepted https connections a day by late 2012 and intentionally weakening cryptographic standards
+Spying laws are not fit for purpose and need to be overhauled, a group of MPs have said. A report by the Home Affairs Select Committee said the laws have been used to spy on journalists, adding this was not acceptable and could stop whistleblowers from coming forward
+Pornography produced in the UK was quietly censored today through an amendment to the 2003 Communications Act, and the measures appear to take aim at female pleasure
+[**source**](https://www.ipsos-mori.com/researchpublications/researcharchive/3466/Perceptions-are-not-reality-10-things-the-world-gets-wrong.aspx)
+Leaked details of Trans-Pacific Partnership Agreement (TPP) negotiations reveal that Australia is pushing an approach to copyright enforcement in the region that appears to ignore broader public interest concerns in favour of the supporting rights owners
+An NSA programme called "Treasure Map" gives the US agency and Britain's electronic eavesdropping GCHQ near real-time information about the operators' networks, right through to end users on computers, smartphones or tablets
+Verizon Communications Inc defended its decision to slow data downloads for some customers using older unlimited data plans, telling U.S. regulators it was a "widely accepted" and lawful part of network management
+This Is How Comcast Is Astroturfing the Net Neutrality Issue: "Comcast is working with thinktanks like the American Enterprise Institute. AEI fellows are printing op-eds in support of killing Net neutrality throughout mediafrom WSJ to US News   World Reportwithout disclosing their ties to Comcast"
+The controversial Data Retention and Investigatory Powers (DRIP) act that is being rushed into British law is to face a legal challenge: the Open Rights Group (ORG) has consulted its lawyers and is raising funds to sue the government over the matter
+That's not a tactic the mso needs to use, but of an individual or organization might do. Here's the Comcast [law enforcement handbook](http://cryptome.org/2014/05/comcast-spy-2012.pdf).
+Photo of NSA technicians sabotaging Cisco router prior to export
+TIL almost 6 years later, Comcast still imposes the same 250GB bandwidth cap limit, which they consider an "extremely large amount of data"
+Same thing happend to me. Only way I was able to settle this was to show PROOF of ownership by looking up my modem s/n via the manufacturer website. Actually, proof that Comcast didn't purchase it. For Arris/Motorola/General Instruments: https://mobilityonline.motorola.com/services/BCSApps/BCSSerialSearch.aspx
+The "Netflix is slow" followup: Comcast may be circumventing their Open Internet agreement by purposefully letting peering exchanges with Level 3 clog up with traffic, effectively throttling Netflix video streams [x-post /r/netflix]

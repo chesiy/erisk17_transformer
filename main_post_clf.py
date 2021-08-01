@@ -50,8 +50,6 @@ def main(args):
         trainer.fit(model, data_module)
 
 
-
-
 if __name__ == "__main__":
     seed_everything(2021, workers=True)
     parser = argparse.ArgumentParser()

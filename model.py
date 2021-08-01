@@ -2,11 +2,13 @@ import torch
 import numpy as np
 import pandas as pd
 from torch import nn, optim
+from torch.utils.data import Dataset, DataLoader
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, AutoModel
 from argparse import ArgumentParser
 from sklearn.metrics import f1_score, precision_score, recall_score
+from get_extra_features import get_features
 
 def mean_pooling(token_embeddings, attention_mask):
     input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
@@ -20,13 +22,23 @@ class LightningInterface(pl.LightningModule):
         self.threshold = threshold
         # self.criterion = nn.CrossEntropyLoss()
         self.criterion = nn.BCEWithLogitsLoss()
+        ''''''
+        # self.extra_feat_train, self.extra_feat_test = get_features()
+        # self.extra_feat_train = torch.from_numpy(self.extra_feat_train)
+        # self.extra_feat_test = torch.from_numpy(self.extra_feat_test)
 
     def training_step(self, batch, batch_nb, optimizer_idx=0):
         x, y = batch
-        y_hat = self(x)
+        extra_feat = self.extra_feat_train[batch_nb*len(x):(batch_nb+1)*len(x)]
+        # print(extra_feat.shape)
+        y_hat = self(x, extra_feat)
+
         if type(y_hat) == tuple:
             y_hat, attn_scores = y_hat
+
+        # print('y', y.device, y_hat.device, y_hat)
         loss = self.criterion(y_hat, y)
+        # print('ls',loss)
         tensorboard_logs = {'train_loss': loss}
         # import pdb; pdb.set_trace()
         # self.log('lr', self.trainer.lr_schedulers[0]['scheduler'].get_last_lr()[0], on_step=True)
@@ -38,7 +50,9 @@ class LightningInterface(pl.LightningModule):
     
     def validation_step(self, batch, batch_nb):
         x, y = batch
-        y_hat = self(x)
+        extra_feat = self.extra_feat_train[batch_nb * len(x):(batch_nb + 1) * len(x)]
+        # print('eee', extra_feat.shape,extra_feat)
+        y_hat = self(x, extra_feat)
         if type(y_hat) == tuple:
             y_hat, attn_scores = y_hat
         yy, yy_hat = y.detach().cpu().numpy(), y_hat.sigmoid().detach().cpu().numpy()
@@ -65,7 +79,8 @@ class LightningInterface(pl.LightningModule):
 
     def test_step(self, batch, batch_nb):
         x, y = batch
-        y_hat = self(x)
+        extra_feat = self.extra_feat_test[batch_nb * len(x):(batch_nb + 1) * len(x)]
+        y_hat = self(x,extra_feat)
         if type(y_hat) == tuple:
             y_hat, attn_scores = y_hat
         yy, yy_hat = y.detach().cpu().numpy(), y_hat.sigmoid().detach().cpu().numpy()
@@ -160,7 +175,7 @@ class BERTHierClassifierSimple(nn.Module):
         self.dropout = nn.Dropout(self.post_encoder.config.hidden_dropout_prob)
         self.clf = nn.Linear(self.post_encoder.config.hidden_size, 1)
     
-    def forward(self, batch, **kwargs):
+    def forward(self, batch, extra_feats, **kwargs):
         feats = []
         attn_scores = []
         for user_feats in batch:
@@ -175,6 +190,7 @@ class BERTHierClassifierSimple(nn.Module):
             attn_scores.append(attn_score)
         feats = torch.stack(feats)
         x = self.dropout(feats)
+
         logits = self.clf(x).squeeze()
         # [bs, num_posts]
         return logits, attn_scores
@@ -198,7 +214,7 @@ class BERTHierClassifierTrans(nn.Module):
         self.dropout = nn.Dropout(self.post_encoder.config.hidden_dropout_prob)
         self.clf = nn.Linear(self.hidden_dim, 1)
     
-    def forward(self, batch, **kwargs):
+    def forward(self, batch, extra_feats, **kwargs):
         feats = []
         attn_scores = []
         for user_feats in batch:
@@ -217,7 +233,9 @@ class BERTHierClassifierTrans(nn.Module):
             attn_scores.append(attn_score)
         feats = torch.stack(feats)
         x = self.dropout(feats)
+
         logits = self.clf(x).squeeze()
+
         # [bs, num_posts]
         return logits, attn_scores
 
@@ -230,6 +248,9 @@ class BERTHierClassifierTransAbs(nn.Module):
         self.num_trans_layers = num_trans_layers
         self.pool_type = pool_type
         self.post_encoder = AutoModel.from_pretrained(model_type)
+        ''''''
+        self.extra_feat_dim = 34
+        ''''''
         if freeze:
             for name, param in self.post_encoder.named_parameters():
                 param.requires_grad = False
@@ -240,13 +261,15 @@ class BERTHierClassifierTransAbs(nn.Module):
         nn.init.xavier_uniform_(self.pos_emb)
         encoder_layer = nn.TransformerEncoderLayer(d_model=self.hidden_dim, dim_feedforward=self.hidden_dim, nhead=num_heads, activation='gelu')
         self.user_encoder = nn.TransformerEncoder(encoder_layer, num_layers=num_trans_layers)
-        self.attn_ff = nn.Linear(self.hidden_dim, 1)
+        self.attn_ff = nn.Linear(self.hidden_dim+self.extra_feat_dim, 1)
         self.dropout = nn.Dropout(self.post_encoder.config.hidden_dropout_prob)
-        self.clf = nn.Linear(self.hidden_dim, 1)
+        self.clf = nn.Linear(self.hidden_dim+self.extra_feat_dim, 1)
     
-    def forward(self, batch, **kwargs):
+    def forward(self, batch, extra_feats, **kwargs):
         feats = []
         attn_scores = []
+        i=0
+        # print('tt',batch.shape,extra_feats.shape)
         for user_feats in batch:
             post_outputs = self.post_encoder(user_feats["input_ids"], user_feats["attention_mask"], user_feats["token_type_ids"])
             # [num_posts, seq_len, hidden_size] -> [num_posts, 1, hidden_size]
@@ -257,19 +280,27 @@ class BERTHierClassifierTransAbs(nn.Module):
             # positional embedding for posts
             x = x + self.pos_emb[:x.shape[0], :].unsqueeze(1)
             x = self.user_encoder(x).squeeze(1) # [num_posts, hidden_size]
-            # print('xx',x.shape)
+            ''''''
+            # print('ff', x.shape)
+            device = x.device
+            extra_x = extra_feats[i].repeat(x.shape[0], 1).float().to(device)
+            x = torch.cat((x,extra_x),dim=1).to(device)
+            i += 1
+            # print('aa',x.shape)
+            ''''''
             # [num_posts, ]
             attn_score = torch.softmax(self.attn_ff(x).squeeze(), -1)
+            # weighted sum [hidden_size, ]
             if len(attn_score.shape)==0:
                 attn_score = attn_score.unsqueeze(dim=0)
-            # print('22',attn_score.shape)
-            # weighted sum [hidden_size, ]
             feat = attn_score @ x
             feats.append(feat)
             attn_scores.append(attn_score)
         feats = torch.stack(feats)
         x = self.dropout(feats)
+
         logits = self.clf(x).squeeze()
+        # print('pp', logits.shape)
         # [bs, num_posts]
         return logits, attn_scores
 
@@ -290,8 +321,8 @@ class HierClassifier(LightningInterface):
         self.save_hyperparameters()
         print(self.hparams)
 
-    def forward(self, x):
-        x = self.model(x)
+    def forward(self, x, extra_feats):
+        x = self.model(x, extra_feats)
         return x
 
     @staticmethod

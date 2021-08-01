@@ -8,6 +8,7 @@ import os
 import numpy as np
 import liwc
 from collections import Counter
+import pickle
 
 antidepressants= ['abilify','aripiprazole', 'adapin', 'doxepin','anafranil', 'clomipramine','Aplenzin', 'bupropion','asendin', 'amoxapine',
 'aventyl','nortriptyline','brexipipzole','rexulti','celexa','citalopram','cymbalta','duloxetine','desyrel','trazodone','effexor','venlafaxine','emsam' ,'selegiline',
@@ -26,16 +27,13 @@ def get_LIWC(tokened_text):
     total_words = sum(liwc_counts.values())         # the total number of lexicon words found
     return liwc_counts,total_words
 
-def process_raw(res):
+
+def tokenize_str(res):
     res.lower()
     res = re.sub('\n', ' ', res)
     res = res.strip()
-    res = res.split()
-    res = ' '.join(res)
-    # print('ff',res)
     res = nltk.word_tokenize(res)
     words = []
-    # print(res)
     for word in res:
         if word.isalpha():
             words.append(word)
@@ -44,45 +42,20 @@ def process_raw(res):
 
 
 def get_input_data(file, path):
-    post_num = 0
     dom = xml.dom.minidom.parse(path + "/" + file)
     collection = dom.documentElement
     title = collection.getElementsByTagName('TITLE')
     text = collection.getElementsByTagName('TEXT')
-    res = ""
-    User_text = []
-    for i in range(len(title)):
-        res = res + title[i].firstChild.data + text[i].firstChild.data+'\n'
-        tmp = process_raw(title[i].firstChild.data + text[i].firstChild.data)
-        if len(tmp)>0:
-            User_text.append(tmp)
-        post_num += 1
-    res.lower()
-    res = re.sub('\n', ' ', res)
-    res = res.strip()
-    res = res.split()
-    emoji_cnt = 0
-    antidep_cnt = 0
-    for word in res:
-        if word==':)' or word==':(' or word=='):' or word=='(:':
-            emoji_cnt += 1
-        if word in antidepressants:
-            antidep_cnt += 1
-    res = ' '.join(res)
-    return_str = ""
-    words = nltk.word_tokenize(res)
-    for word in words:
-        if word.isalpha():
-            return_str= return_str + word + ' '
 
-    # print(return_str)
-    print(file + " complete!")
+    return title,text
 
-    return return_str,User_text,post_num,emoji_cnt,antidep_cnt
 
 FEATURE_NUM = 9
 
-def cal_features(posts,postnum):
+def cal_LIWC_features(posts,postnum):
+    """
+    calculate LIWC features of a user
+    """
     x = np.zeros(FEATURE_NUM, dtype=float)
 
     for post in posts:
@@ -95,33 +68,95 @@ def cal_features(posts,postnum):
         x[5] += liwc_counts['cogproc (Cognitive Processes)']
         x[6] += liwc_counts['focuspresent (Present Focus)']
 
-        # x[7] += liwc_counts['certain (Certainty)']
-        # x[8] += liwc_counts['affect (Affect)']
-        # x[9] += liwc_counts['sexual (Sexual)']
-        # x[10] += liwc_counts['ingest (Ingest)']
-        # x[11] += liwc_counts['health (Health)']
-
     for i in range(FEATURE_NUM-2):
         x[i] /= postnum
 
     return x
 
 
-def processdata(files,path):
-    n=0
+def process_posts(title, text, num_k):
+    """
+    process num_k posts of a user
+    """
+    res = ""
+    User_text = []
+    post_num = 0
+    for i in range(len(title)):
+        res = res + title[i].firstChild.data + text[i].firstChild.data+'\n'
+        tmp = tokenize_str(title[i].firstChild.data + text[i].firstChild.data)
+        if len(tmp)>0:
+            User_text.append(tmp)
+        post_num += 1
+        ''''''
+        if post_num == num_k:
+            break
+        ''''''
+    res.lower()
+    res = re.sub('\n', ' ', res)
+    res = res.strip()
+    res = res.split()
+
+    # LIWC features
+    feats = cal_LIWC_features(User_text,post_num)
+    # emoji & antidepressants
+    emoji_cnt = 0
+    antidep_cnt = 0
+    for word in res:
+        if word==':)' or word==':(' or word=='):' or word=='(:':
+            emoji_cnt += 1
+        if word in antidepressants:
+            antidep_cnt += 1
+    feats[FEATURE_NUM-2] = emoji_cnt/post_num
+    feats[FEATURE_NUM-1] = antidep_cnt
+
+    res = ' '.join(res)
+    return_str = ""
+    words = nltk.word_tokenize(res)
+    for word in words:
+        if word.isalpha():
+            return_str= return_str + word + ' '
+
+    return return_str, post_num, feats
+
+
+def process_across_usr(files, path, num_k):
+    """
+    process all users' num_k posts in the directory
+    return: all users' text, user num, all users' features (LIWC+emoji+antidepressants)
+    """
+    n = 0
     res = []
-    LIWC_features = []
+    features = []
     for file in files:
-        text,posts,postnum,emoji_cnt,antidep_cnt = get_input_data(file, path)
+        title, text = get_input_data(file, path)
+        text, postnum, feats = process_posts(title, text, num_k)
         res.append(text)
-        LIWC_fea = cal_features(posts,postnum)
-        LIWC_fea[FEATURE_NUM-2] = emoji_cnt/postnum
-        LIWC_fea[FEATURE_NUM-1] = antidep_cnt
-        LIWC_features.append(LIWC_fea)
+        features.append(feats)
         n = n+1
-        # if n==4:
-        #     break
-    return res,n,LIWC_features
+
+    return res, n, features
+
+
+def process_across_usr_for_chunk(files, path, postnum_recorder, chunknum, chunkid):
+    """
+    process all users' num_k posts in the directory.
+    Since each user has different postnum, num_k vary according to user and chunkid.
+    return: all users' text, user num, all users' features (LIWC+emoji+antidepressants)
+    """
+    n = 0
+    res = []
+    features = []
+    num_k = -1
+    for file in files:
+        if len(postnum_recorder) != 0:
+            num_k = postnum_recorder[n] * (chunkid + 1) / chunknum
+        title, text = get_input_data(file, path)
+        text, postnum, feats = process_posts(title, text, num_k)
+        res.append(text)
+        features.append(feats)
+        n = n+1
+
+    return res, n, features
 
 
 def cal_F1(y,y_hat):
@@ -148,12 +183,15 @@ def cal_F1(y,y_hat):
     acc = (tn + tp) / (tn + tp + fp + fn)
     print('F1:' + str(F1) + " p:" + str(p) + " r:" + str(r) + ' acc:' + str(acc))
 
+
 nega_path="./dataset/negative_examples_anonymous"
 posi_path="./dataset/positive_examples_anonymous"
 
 nega_test_path = "./dataset/negative_examples_test"
 posi_test_path = "./dataset/positive_examples_test"
 
+tv = TfidfVectorizer(binary=False, decode_error='ignore', stop_words='english', min_df=2)
+lda = LatentDirichletAllocation(n_components=25, learning_offset=10., random_state=0, max_iter=200)
 
 def get_features():
     nega_files = os.listdir(nega_path)
@@ -161,38 +199,63 @@ def get_features():
     nega_test_files = os.listdir(nega_test_path)
     posi_test_files = os.listdir(posi_test_path)
 
-    posires, posinum, feature1 = processdata(posi_files, posi_path)
-    negares, neganum, feature2 = processdata(nega_files, nega_path)
-    positest, positestnum, feature3 = processdata(posi_test_files, posi_test_path)
-    negatest, negatestnum, feature4 = processdata(nega_test_files, nega_test_path)
+    posires, posinum, feature1 = process_across_usr(posi_files, posi_path,-1)
+    negares, neganum, feature2 = process_across_usr(nega_files, nega_path,-1)
+    positest, positestnum, feature3 = process_across_usr(posi_test_files, posi_test_path,-1)
+    negatest, negatestnum, feature4 = process_across_usr(nega_test_files, nega_test_path,-1)
 
-    features = np.array(feature1 + feature2 + feature3 + feature4)
+    train_features = np.array(feature1 + feature2)
+    test_features = np.array(feature3 + feature4)
 
-    tv = TfidfVectorizer(binary=False, decode_error='ignore', stop_words='english', min_df=2)
-    lda = LatentDirichletAllocation(n_components=25, learning_offset=10., random_state=0, max_iter=100)
-
-    totalX = posires + negares + positest + negatest
+    trainX = posires + negares
 
     # TF-IDF的结果
-    totalX = tv.fit_transform(totalX)
+    trainX = tv.fit_transform(trainX)
     # LDA的结果
-    docres = lda.fit_transform(totalX)
+    docres = lda.fit_transform(trainX)
     print('doc', docres, docres.shape)
     print('lda', lda.components_.shape)
 
-    totalX = totalX.toarray()
+    pickle.dump(tv, open("TFIDFvectorizer.pickle", "wb"))
+    pickle.dump(lda, open("LDA.pickle", "wb"))
+
+    # trainX = trainX.toarray()
 
     # print(totalX.shape,docres.shape,type(totalX),type(docres),features.shape)
-    totalX = np.concatenate((docres, features), axis=1)
+    trainX = np.concatenate((docres, train_features), axis=1)
     # totalX=np.concatenate((totalX,features),axis=1)
 
-    trainX = totalX[:(posinum + neganum)]
-    testX = totalX[(posinum + neganum):]
+    testX = positest + negatest
+    testX = tv.transform(testX)
+    lda_res = lda.transform(testX)
+
+    testX = np.concatenate((lda_res, test_features), axis=1)
+
     print(testX.shape)
     print(trainX.shape)
 
     return trainX,testX
 
+
+def get_test_features_chunk(nega_postnum_recorder,posi_postnum_recorder, chunknum, chunkid):
+    nega_test_files = os.listdir(nega_test_path)
+    posi_test_files = os.listdir(posi_test_path)
+
+    positest, positestnum, feature3 = process_across_usr_for_chunk(posi_test_files, posi_test_path, posi_postnum_recorder, chunknum, chunkid)
+    negatest, negatestnum, feature4 = process_across_usr_for_chunk(nega_test_files, nega_test_path, nega_postnum_recorder, chunknum, chunkid)
+
+    test_features = np.array(feature3 + feature4)
+
+    testX = positest + negatest
+    tv = pickle.load(open("TFIDFvectorizer.pickle", "rb"))
+    lda = pickle.load(open("LDA.pickle", "rb"))
+
+    testX = tv.transform(testX)
+    lda_res = lda.transform(testX)
+
+    testX = np.concatenate((lda_res, test_features), axis=1)
+
+    return testX
 
 if __name__ == '__main__':
     trainX,testX=get_features()

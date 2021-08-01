@@ -99,7 +99,6 @@ class HierDataset(Dataset):
     def __getitem__(self, index: int):
         return self.data[index], self.labels[index]
 
-
 def my_collate_hier(data):
     labels = []
     processed_batch = []

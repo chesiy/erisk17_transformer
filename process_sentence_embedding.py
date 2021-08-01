@@ -152,8 +152,6 @@ def get_sample_summary_v2(file, path):
     test_mappings = np.array(test_mappings)
     test_tags = np.array(test_tags)
 
-
-
     # for K in [8, 16, 32, 64]:
     for K in [16]:
         # os.makedirs(f"./processed/kmeans{K}", exist_ok=True)

@@ -10,15 +10,12 @@ from data import HierDataModule
 from model import HierClassifier
 from transformers import AutoTokenizer
 import pytorch_lightning as pl
-from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning import seed_everything
 from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 
 
-model_type = HierClassifier
 
 def main(args):
-    checkpoint_callback = ModelCheckpoint(dirpath='checkpoints',save_top_k=1,save_weights_only=True,monitor='val_loss')
     model = model_type(**vars(args))
     if "bertweet" in args.model_type:
         tokenizer = AutoTokenizer.from_pretrained(args.model_type, normalization=True)
@@ -31,7 +28,7 @@ def main(args):
         mode="max"
     )
     
-    trainer = pl.Trainer(gpus=1, callbacks=[early_stop_callback, checkpoint_callback], val_check_interval=1.0, max_epochs=100, min_epochs=1, accumulate_grad_batches=args.accumulation, gradient_clip_val=args.gradient_clip_val, deterministic=True, log_every_n_steps=100)
+    trainer = pl.Trainer(gpus=1, callbacks=[early_stop_callback], val_check_interval=1.0, max_epochs=100, min_epochs=1, accumulate_grad_batches=args.accumulation, gradient_clip_val=args.gradient_clip_val, deterministic=True, log_every_n_steps=100)
 
     if args.find_lr:
         # Run learning rate finder
@@ -52,30 +49,6 @@ def main(args):
         # model.hparams.lr = new_lr
     else:
         trainer.fit(model, data_module)
-
-    return checkpoint_callback.best_model_path
-
-
-def run_chunk(model, args):
-    print('args',args)
-    model.eval()
-    if "bertweet" in args.model_type:
-        tokenizer = AutoTokenizer.from_pretrained(args.model_type, normalization=True)
-    else:
-        tokenizer = AutoTokenizer.from_pretrained(args.model_type)
-
-    data_module = HierDataModule(args.bs, args.input_dir, tokenizer, args.max_len)
-    test_loader = data_module.val_dataloader()
-    all_y_hat = []
-    all_label = []
-    for i, data in enumerate(test_loader):
-        x, label = data
-        y_hat, atten_score = model(x)
-        all_y_hat += y_hat.sigmoid().tolist()
-        all_label += label.tolist()
-
-    return all_y_hat, all_label
-
 
 
 if __name__ == "__main__":

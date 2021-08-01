@@ -14,9 +14,12 @@ from data import HierDataModule
 from ERDE import ERDE_chunk,ERDE_sample
 import numpy as np
 import time
+from get_extra_features import get_test_features_chunk
+import torch
 
 
 def main(args):
+    print("training....")
     checkpoint_callback = ModelCheckpoint(dirpath='checkpoints', save_top_k=1, save_weights_only=True,
                                           monitor='val_loss')
     model = model_type(**vars(args))
@@ -58,7 +61,7 @@ def main(args):
     return checkpoint_callback.best_model_path
 
 
-def run_test(model, args, tokenizer):
+def run_test(model, args, tokenizer, all_extra_feats):
     # print('args', args)
     model.eval()
 
@@ -68,7 +71,8 @@ def run_test(model, args, tokenizer):
     all_label = []
     for i, data in enumerate(test_loader):
         x, label = data
-        y_hat, atten_score = model(x)
+        extra_feats = all_extra_feats[i * len(x):(i + 1) * len(x)]
+        y_hat, atten_score = model(x, extra_feats)
         if len(y_hat.shape) == 0:
             y_hat = y_hat.unsqueeze(dim=0)
         # print(y_hat, label)
@@ -111,7 +115,10 @@ def ERDE_in_chunk(model, chunk_num, args):
     for chunk in range(chunk_num):
         get_chunk_summary(chunk, postnum_recorder, chunk_num)
 
-        y_hat, label = run_test(model, args, tokenizer)
+        extra_feats = get_test_features_chunk(postnum_recorder["dataset/negative_examples_test"],postnum_recorder["dataset/positive_examples_test"], chunk_num, chunk)
+        extra_feats = torch.from_numpy(extra_feats)
+
+        y_hat, label = run_test(model, args, tokenizer, extra_feats)
         print('chunk', chunk, len(y_hat), len(label), len(postnum_rec))
 
         for i in range(len(label)):
@@ -227,7 +234,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # best_checkpoint_path = main(args)
-    best_checkpoint_path = './checkpoints/epoch=2-step=365-v1.ckpt'
+    best_checkpoint_path = './checkpoints/epoch=4-step=609.ckpt'
 
     start=time.time()
 
